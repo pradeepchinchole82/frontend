@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Register Form</legend>
+            <form  action="register.html" method="post" >
+        <table>
+        
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstName"></td>
+            </tr>
+        
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastName"></td>
+            </tr>
+            <tr>
+                <td>Email Id</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Mobile</td>
+                <td><input type="text" name="mobile"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+           
+            <tr>
+                <td>Marks</td>
+                <td><input type="number" name="marks"></td>
+            </tr>
+
+            <tr>
+                <td>Addres</td>
+                <td>
+                    <textarea name="address" rows="5" cols="20">
+
+                    </textarea>
+
+
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Feedback</td>
+                <td><input type="range" name="feedback"  min="1"  max="10" value="2"></td>
+            </tr>
+            <tr>
+                <td>Facebook URL</td>
+                <td><input type="url" name="facebookurl"></td>
+            </tr>
+           
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+        
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="M"> Male
+                    <input type="radio" name="gender" value="F"> Female
+                
+                
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="Cooking"> Cooking
+                    <input type="checkbox" name="hobbies" value="Drawing"> Drawing
+                    <input type="checkbox" name="hobbies" value="Travelling"> Travelling
+                    <input type="checkbox" name="hobbies" value="Singing"> Signing
+                                  
+                
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Qualification</td>
+                <td>
+                   <select name="qualification" size="3" multiple>
+                    <option value="BE">BE</option>
+                    <option value="ME">ME</option>
+                    <option value="BSC">BSC</option>
+                    <option value="MSC">MSC</option>
+                    <option value="MBA">MBA</option>
+                    <option value="OTHERS">OTHERS</option>
+                    
+                   </select>
+                                  
+                
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Upload Photo</td>
+                <td>
+                  <input type="file" name="photo">              
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Resume</td>
+                <td>
+                  <input type="file" name="resume" multiple>              
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        
+            
+        
+        </table>
+        
+                
+            </form>
+        </fieldset>
+        
+    
+</body>
+</html>

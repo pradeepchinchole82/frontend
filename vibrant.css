@@ -1,0 +1,59 @@
+
+/*  Element Selector*/
+
+div{
+    color:green;
+}
+
+/*  Element Selector*/
+
+p,font{
+font-size: 25px;
+background-color: blueviolet;
+
+}
+
+
+
+/*  Class Selector*/
+
+.A{
+    border: 5px solid red;
+    color:yellow;
+    font-weight: bold;
+   font-family: 'Courier New', Courier, monospace; 
+    }
+    
+/*Id selector*/
+#loginForm{
+    background-color: cyan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
