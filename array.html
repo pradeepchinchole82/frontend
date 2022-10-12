@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+   <link  href="vibrant.css"  type="text/css"  rel="stylesheet">
+
+    <title>Login Form</title>
+</head>
+<body>
+
+   <script>
+       
+       var cities=['PUNE','MUMBAI','CHENNAI','HYDERABAD','DELHI'];
+
+       var movies=new Array(5);
+        movies[0]="SANGAM";
+        movies[1]="GHAR";
+        movies[2]="GADAR";
+        movies[3]="SHAN";
+        movies[4]="SHOR";
+       movies.push("ANAND");
+       movies.push("SHOLAY");
+       movies.push("GHAYAL");
+
+       
+
+
+
+        document.writeln("<h2><pre>");
+            document.writeln("  Cities :"+cities);
+            document.writeln("  Movies :"+movies);
+        
+            document.writeln("  Cities :"+cities.toString());
+            document.writeln("  Movies :"+movies.toString());
+            document.writeln("  Cities length :"+cities.length);
+            document.writeln("  Movies :"+movies.length);
+
+            cities.pop();
+            movies.pop();
+            movies.pop(); 
+           
+            document.writeln("............  After removal ............");
+            document.writeln("  Cities length :"+cities.length);
+            document.writeln("  Movies :"+movies.length);
+            document.writeln("  Cities :"+cities);
+            document.writeln("  Movies :"+movies);
+
+            cities.sort();
+            movies.sort();
+
+            document.writeln("............  After sort ............");
+            document.writeln("  Cities :"+cities);
+            document.writeln("  Movies :"+movies);
+            cities.reverse();
+            movies.reverse();
+        
+            movies.push(undefined);
+            movies.push(undefined);
+            
+            document.writeln("............  After reverse ............");
+            document.writeln("  Cities :"+cities);
+            document.writeln("  Movies :"+movies);
+
+        
+            document.writeln("............ Display Array using for loop ............");
+            for(var i=0;i<movies.length;i++)
+            document.writeln(movies[i]);
+
+
+            document.writeln("............ Display Array using for in loop ............");
+            for(var i in movies)
+            document.writeln(movies[i]);
+
+            document.writeln("............ Display Array using forEach method ............");
+            movies.forEach(function(element,index){
+                document.writeln(element+" : "+index);
+
+            });
+            
+        
+           document.writeln("............ Display Movies with name starts with S ............");
+           var newArray=movies.filter(function(element,index){
+                if(element!=undefined)
+                return element.startsWith("S");
+            });
+            document.writeln("  Movies :"+newArray);
+           
+
+           document.writeln("............ Display Movies with name starts with S ............");
+          movies.map(function(element,index){
+                if(element!=undefined && element.startsWith("S"))
+                movies[index]=element.toLowerCase();
+                
+            });
+            document.writeln("  Movies :"+movies);
+            
+            
+        
+           
+        
+        
+        
+        
+
+        
+        
+        
+             
+        document.writeln("<pre></h2>");
+    
+
+
+     
+     
+
+
+
+
+   </script>
+
+    
+</body>
+</html>

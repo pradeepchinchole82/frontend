@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+   <link  href="vibrant.css"  type="text/css"  rel="stylesheet">
+
+    <title>Login Form</title>
+</head>
+<body>
+
+   <script>
+      
+                  
+        document.writeln("<h2><pre>");
+
+           function Employee(id=101,name="Ameya",salary=5000){
+              this.id=id;
+              this.name=name;
+              this.salary=salary;
+
+              this.talk=function(){
+                document.writeln("Hi All,Below are my details");
+                document.writeln("Id      :"+this.id);
+                document.writeln("Name    :"+this.name);
+                document.writeln("Salary  :"+this.salary);
+             }
+           }
+
+
+           var e1=new Employee();
+
+           var e2=new Employee(101,"Pradeep",3400.00);
+           var e3=new Employee(102,"Sachin",45000);
+           var e4=new Employee(101,"Rajesh");
+           
+
+           e1.talk();
+           e2.talk();
+           e3.talk();
+           e4.talk();
+
+
+
+
+
+
+
+
+
+
+        document.writeln("<pre></h2>");
+    
+
+
+     
+     
+
+
+
+
+   </script>
+
+    
+</body>
+</html>

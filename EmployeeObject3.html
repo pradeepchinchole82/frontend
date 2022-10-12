@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+   <link  href="vibrant.css"  type="text/css"  rel="stylesheet">
+
+    <title>Login Form</title>
+</head>
+<body>
+
+   <script>
+      
+                  
+        document.writeln("<h2><pre>");
+
+             var employee=new Object();
+
+             employee.id=101;
+             employee.name="Sachin Tendular";
+             employee.salary=45000.00;
+             employee.isMarried=true;
+             employee.mobile="7162452627";
+             employee.pan="eompc9876d";
+             employee.talk=function(){
+                document.writeln("Hi All,Below are my details");
+                document.writeln("Id      :"+this.id);
+                document.writeln("Name    :"+this.name);
+                document.writeln("Salary  :"+this.salary);
+                document.writeln("isMarried :"+this.isMarried);
+                document.writeln("Mobile  :"+this.mobile);
+                document.writeln("Pan     :"+this.pan);
+                       
+             }
+
+             employee.toString=function(){
+               return "Employee ["+JSON.stringify(this)+"]";        
+             }
+
+        employee.talk();
+
+
+        document.writeln(employee);
+        document.writeln(employee.toString());
+        document.writeln(JSON.stringify(employee));
+        
+       
+
+
+
+
+        document.writeln("<pre></h2>");
+    
+
+
+     
+     
+
+
+
+
+   </script>
+
+    
+</body>
+</html>
